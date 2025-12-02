@@ -10,11 +10,11 @@ int main() {
         cin >> a;
         numbers[i] = a;
     }
-    int max = numbers[0];
+    int min = numbers[0];
     for (int i = 1; i < 5; i++) {
-        if (numbers[i] > max) max = numbers[i];
+        if (numbers[i] < min) min = numbers[i];
     }
 
-    cout << max << endl;
+    cout << min << endl;
     return 0;
 }
